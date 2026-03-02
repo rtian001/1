@@ -23,3 +23,13 @@ sharetopvpn.github.io
 yoyapai.com
 
 ```
+
+```
+#下载
+curl -o readme.md https://128877.xyz/clash-v2ray/clash-v2ray.github.io/main/README.md
+#获取更新时间
+str=$(sed -n 1p readme.md)
+echo "${str##*更新时间 }"
+#输出节点
+sed -n '19,25p' readme.md
+```
